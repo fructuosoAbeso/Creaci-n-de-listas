@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- FILA HORIZONTAL: IMAGEN + BOTONES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imgCartel"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mi_foto"
+                android:contentDescription="Cartel de la película"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnTomarFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tomar fotografía"
+                    android:padding="12dp" />
+
+                <Button
+                    android:id="@+id/btnSeleccionarImagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccionar imagen"
+                    android:padding="12dp"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent" android:layout_height="16dp" />
+
+        <!-- CAMPOS DE TEXTO -->
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título de la película"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text" />
+
+        <EditText
+            android:id="@+id/etDirector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Director"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etAnyo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Año de estreno"
+            android:inputType="number"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="8dp" />
+
+        <!-- SPINNERS -->
+        <Spinner
+            android:id="@+id/spinnerGenero"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:entries="@array/array_genero"
+            android:prompt="@string/genero_prompt"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+        <Spinner
+            android:id="@+id/spinnerFormato"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:entries="@array/array_formato"
+            android:prompt="@string/formato_prompt"
+            android:layout_marginTop="8dp"
+            android:padding="12dp" />
+
+        <!-- ENLACE IMDB -->
+        <EditText
+            android:id="@+id/etImdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enlace IMDB"
+            android:inputType="textUri"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginTop="8dp" />
+
+        <!-- NOTAS -->
+        <EditText
+            android:id="@+id/etNotas"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Notas"
+            android:gravity="top"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <Space android:layout_width="match_parent" android:layout_height="24dp" />
+
+        <!-- BOTONES GUARDAR Y CANCELAR -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Guardar"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancelar"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent" android:layout_height="24dp" />
+    </LinearLayout>
+</ScrollView>

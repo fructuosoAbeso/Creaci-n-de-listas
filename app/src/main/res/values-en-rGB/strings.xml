@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Film Library</string>
+    <string name="creado_por">Created by Fructuoso Nguema</string>
+    <string name="foto_autor">Author photo</string>
+    <string name="ir_al_sitio">Go to website</string>
+    <string name="obtener_soporte">Get support</string>
+    <string name="volver">Back</string>
+    <string name="lengs_en">EN</string>
+    <string name="genero_prompt">Selecciona un género</string>
+    <string name="formato_prompt">Selecciona un formato</string>
+    <string name="cartel_pelicula">Movie poster</string>
+    <string name="director">Director: Christopher Nolan</string>
+    <string name="anyo">Year: 2014</string>
+    <string name="genero">Genre: Science fiction</string>
+    <string name="formato">Format: Blu-Ray</string>
+    <string name="ver_imdb">View on IMDB</string>
+    <string name="editar">Edit</string>
+</resources>
+

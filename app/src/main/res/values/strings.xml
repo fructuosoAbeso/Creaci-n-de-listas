@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Filmoteca</string>
+    <string name="creado_por" translatable="false">Creada por Fructuoso Nguema</string>
+    <string name="foto_autor">Foto del autor</string>
+    <string name="ir_al_sitio">Ir al sitio web</string>
+    <string name="obtener_soporte">Obtener soporte</string>
+    <string name="volver">Volver</string>
+    <string name="lengs_en">EN</string>
+    <string name="cartel_pelicula">Cartel de la película</string>
+    <string name="director">Director: Christopher Nolan</string>
+    <string name="anyo">Año: 2014</string>
+    <string name="genero">Género: Ciencia ficción</string>
+    <string name="formato">Formato: Blu-Ray</string>
+    <string name="ver_imdb">Ver en IMDB</string>
+    <string name="editar">Editar</string>
+    <string name="genero_prompt">Selecciona un género</string>
+    <string name="formato_prompt">Selecciona un formato</string>
+</resources>
