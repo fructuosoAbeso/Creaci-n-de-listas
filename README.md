@@ -37,3 +37,4 @@ Editar información
 Mostrar imagen, título y director en cada item
 
 Tecnologías
+Kotlin · Android Studio · ListView · RecyclerView · Jetpack Compose
